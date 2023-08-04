@@ -8,21 +8,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    // One syntax to implement a
-    // GET method
-//    @GetMapping("/")
-//    public String home()
-//    {
-//        String str
-//                = "<html><body><font color=\"green\">"
-//
-//                + "<h1>WELCOME" + "<br/>" + "   To  " + "<br/>" + " GeeksForGeeks</h1>"
-//                + "</font></body></html>";
-//        return str;
-//    }
+//     One syntax to implement a
+//     GET method
+    @GetMapping("/")
+    public String home()
+    {
+        String str
+                = "<html><body><font color=\"green\">"
 
-    // Another syntax to implement a
-    // GET method
+                + "<h1>WELCOME" + "<br/>" + "   To  " + "<br/>" + " GeeksForGeeks</h1>"
+                + "</font></body></html>";
+        return str;
+    }
+
+//     Another syntax to implement a
+//     GET method
     @RequestMapping(
             method = { RequestMethod.GET },
             value = { "/gfg" })
@@ -38,6 +38,8 @@ public class Controller {
                 + "well thought and well explained "
                 + "solutions for selected questions."
                 + "</h2></font></body></html>";
+
+
         return str2;
     }
 
